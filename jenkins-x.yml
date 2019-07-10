@@ -1,1 +1,8 @@
 buildPack: go
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      postBuild:
+        replace: true
+        steps:
+        - command: echo "CACABREATH"
